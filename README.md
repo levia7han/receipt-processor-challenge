@@ -1,2 +1,8 @@
-# receipt-processor-challenge
-Api for scoring receipts
+```
+npm install
+npm run dev
+```
+
+```
+open http://localhost:3000
+```
