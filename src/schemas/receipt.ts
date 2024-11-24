@@ -6,10 +6,14 @@ export const receiptSchema = z.object({
         .string()
         .regex(
             new RegExp('^[\\w\\s\\-&]+$'),
-            'retailer must be in the form of'
+            `Retailer must be alpha numeric and only include '-' or '&' special characters`
         ),
-    purchaseDate: z.string().date('date is invalid'),
-    purchaseTime: z.string().regex(/^\d{2}:\d{2}$/),
+    purchaseDate: z
+        .string()
+        .date(`Date is invalid, must be in 'YYYY-MM-DD' format`),
+    purchaseTime: z
+        .string()
+        .regex(/^\d{2}:\d{2}$/, `Must be in the form of '00:00'`),
     items: z.array(itemSchema).nonempty('You must have at least one item'),
     total: z
         .string()

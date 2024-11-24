@@ -1,24 +1,28 @@
 {
-  "name": "app",
-  "type": "module",
-  "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "build": "tsc",
-    "format": "prettier -w ."
-  },
-  "dependencies": {
-    "@hono/node-server": "^1.13.7",
-    "@hono/zod-validator": "^0.4.1",
-    "date-fns": "^4.1.0",
-    "hono": "^4.6.11",
-    "ts-to-zod": "^3.13.0",
-    "uuid": "^11.0.3",
-    "zod": "^3.23.8"
-  },
-  "devDependencies": {
-    "@types/node": "^20.11.17",
-    "prettier": "^3.3.3",
-    "tsx": "^4.7.1",
-    "typescript": "^5.7.2"
-  }
+    "name": "app",
+    "type": "module",
+    "version": "0.1.0",
+    "scripts": {
+        "dev": "tsx watch src/index.ts",
+        "build": "tsc",
+        "format": "prettier -w .",
+        "test": "vitest",
+        "coverage": "vitest run --coverage"
+    },
+    "dependencies": {
+        "@hono/node-server": "^1.13.7",
+        "@hono/zod-validator": "^0.4.1",
+        "date-fns": "^4.1.0",
+        "hono": "^4.6.11",
+        "ts-to-zod": "^3.13.0",
+        "uuid": "^11.0.3",
+        "zod": "^3.23.8"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.17",
+        "prettier": "^3.3.3",
+        "tsx": "^4.7.1",
+        "typescript": "^5.7.2",
+        "vitest": "^2.1.5"
+    }
 }
