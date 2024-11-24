@@ -1,6 +1,6 @@
 import { expect, test } from 'vitest'
-import { scoreItemDescription } from '../src/utils/scoreItemDescription.js'
-import type { Item } from '../src/models/item.js'
+import { scoreItemDescription } from '../../src/utils/scoreItemDescription.js'
+import type { Item } from '../../src/models/item.js'
 
 test('item should have no score', () => {
     const items: Item[] = [{ shortDescription: 'item', price: '2.34' }]

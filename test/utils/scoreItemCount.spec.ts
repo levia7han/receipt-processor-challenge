@@ -1,6 +1,6 @@
 import { expect, test } from 'vitest'
-import { scoreItemCount } from '../src/utils/scoreItemCount.js'
-import type { Item } from '../src/models/item.js'
+import { scoreItemCount } from '../../src/utils/scoreItemCount.js'
+import type { Item } from '../../src/models/item.js'
 
 test('items quantities scored correctly', () => {
     const items: Item[] = [

@@ -1,6 +1,6 @@
 import { expect, test } from 'vitest'
-import { scoreTimeWindow } from '../src/utils/scoreTimeWindow.js'
-import type { Receipt } from '../src/models/receipt.js'
+import { scoreTimeWindow } from '../../src/utils/scoreTimeWindow.js'
+import type { Receipt } from '../../src/models/receipt.js'
 
 test('10 points if time of purchase is after 2:00pm but before 4:00pm', () => {
     const receipt: Receipt = {

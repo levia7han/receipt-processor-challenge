@@ -2,7 +2,7 @@ import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
 import { zValidator } from '@hono/zod-validator'
 import { receiptSchema } from './schemas/receipt.js'
-import { ReceiptScoringService } from './services/receiptScoringService.js'
+import { ReceiptScoringService } from './services/ReceiptScoringService.js'
 import { v4 as uuidv4 } from 'uuid'
 
 const app = new Hono()

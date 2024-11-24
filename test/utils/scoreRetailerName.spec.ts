@@ -1,6 +1,6 @@
 import { expect, test } from 'vitest'
-import { scoreRetailerName } from '../src/utils/scoreRetailerName.js'
-import type { Receipt } from '../src/models/receipt.js'
+import { scoreRetailerName } from '../../src/utils/scoreRetailerName.js'
+import type { Receipt } from '../../src/models/receipt.js'
 
 test('correctly scores name', () => {
     const receipt: Receipt = {

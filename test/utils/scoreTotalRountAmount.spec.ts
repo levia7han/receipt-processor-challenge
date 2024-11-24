@@ -1,6 +1,6 @@
 import { expect, test } from 'vitest'
-import { scoreTotalRoundAmount } from '../src/utils/scoreTotalRoundAmount.js'
-import type { Receipt } from '../src/models/receipt.js'
+import { scoreTotalRoundAmount } from '../../src/utils/scoreTotalRoundAmount.js'
+import type { Receipt } from '../../src/models/receipt.js'
 
 test('should return a score when total has no cents', () => {
     const receipt: Receipt = {

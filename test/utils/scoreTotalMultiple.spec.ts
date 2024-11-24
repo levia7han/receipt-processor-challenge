@@ -1,6 +1,6 @@
 import { expect, test } from 'vitest'
-import { scoreTotalMultiple } from '../src/utils/scoreTotalMultiple.js'
-import type { Receipt } from '../src/models/receipt.js'
+import { scoreTotalMultiple } from '../../src/utils/scoreTotalMultiple.js'
+import type { Receipt } from '../../src/models/receipt.js'
 
 test('should return a score when total is multiple of .25', () => {
     const receipt: Receipt = {
