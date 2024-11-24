@@ -1,3 +1,4 @@
+// 6 points if the day in the purchase date is odd
 export function scorePurchaseDate(purchaseDate: string): number {
     const splitDate = purchaseDate.split('-')
 

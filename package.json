@@ -5,9 +5,12 @@
     "scripts": {
         "dev": "tsx watch src/index.ts",
         "build": "tsc",
+        "build:docker": "docker build .",
         "format": "prettier -w .",
         "test": "vitest",
-        "coverage": "vitest run --coverage"
+        "coverage": "vitest run --coverage",
+        "up": "docker-compose up -d",
+        "down": "docker-compose down"
     },
     "dependencies": {
         "@hono/node-server": "^1.13.7",
