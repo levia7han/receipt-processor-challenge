@@ -12,19 +12,12 @@ export class ReceiptScoringService {
         let score = 0
 
         score += scoreRetailerName(receipt.retailer)
-        console.log(`name ${score}`)
         score += scoreTotalRoundAmount(receipt.total)
-        console.log(`total round ${score}`)
         score += scoreTotalMultiple(receipt.total)
-        console.log(`quarter divisable ${score}`)
         score += scoreItemCount(receipt.items)
-        console.log(`items count ${score}`)
         score += scorePurchaseDate(receipt.purchaseDate)
-        console.log(`date is odd ${receipt.purchaseDate} ${score}`)
         score += scoreTimeWindow(receipt.purchaseTime)
-        console.log(`inside time window ${score}`)
         score += scoreItemDescription(receipt.items)
-        console.log(`item description ${score}`)
 
         return score
     }
