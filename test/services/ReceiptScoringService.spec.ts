@@ -1,6 +1,5 @@
 import { expect, test } from 'vitest'
 import { ReceiptScoringService } from '../../src/services/ReceiptScoringService.js'
-
 test('receipt scored correctly', () => {
     const receiptScoringService = new ReceiptScoringService()
 
