@@ -9,8 +9,8 @@
         "format": "prettier -w .",
         "test": "vitest",
         "coverage": "vitest run --coverage",
-        "up": "docker-compose up -d",
-        "down": "docker-compose down"
+        "up": "docker compose up -d",
+        "down": "docker compose down"
     },
     "dependencies": {
         "@hono/node-server": "^1.13.7",
