@@ -30,13 +30,13 @@ http://localhost:3000
 Running the below will build and start the service as long as you have docker and its utilities installed
 
 ```console
-docker-compose up -d
+docker compose up -d
 ```
 
 To shut down docker and remove the container
 
 ```console
-docker-compose down
+docker compose down
 ```
 
 ---
