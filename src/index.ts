@@ -12,6 +12,7 @@ const scoredReceiptsRepo = new Map<string, number>()
 app.post(
     '/receipts/process',
     zValidator('json', receiptSchema, (result, c) => {
+        // TODO: may not be a bad idea to check for item totals adding up to receipt total
         if (!result.success) {
             return c.text(`The receipt is invalid`, 400)
         }
